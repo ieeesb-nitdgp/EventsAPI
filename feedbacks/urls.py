@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 router.register(r'feedbacks', views.FeedbackView, 'feedback')
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    
     path('api/', include(router.urls)),
 ]
