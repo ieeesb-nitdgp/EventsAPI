@@ -3,8 +3,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-STATIC_DIR = os.path.join(BASE_DIR,'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_DIR = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 SECRET_KEY = '^@c&g%&yasn34esk7=li3(=s(i-n5w-3jop(etk&4w*x(0if+&'
