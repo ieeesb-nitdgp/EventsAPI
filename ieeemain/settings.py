@@ -3,8 +3,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
-
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 SECRET_KEY = '^@c&g%&yasn34esk7=li3(=s(i-n5w-3jop(etk&4w*x(0if+&'
@@ -114,8 +112,13 @@ USE_TZ = True
 CORS_ORIGIN_ALLOW_ALL = True
 
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
